@@ -1,4 +1,6 @@
-linguagens = ["python", "js", "c", "java", "csharp"]
+## REMOVE A PRIMEIRA OCCORENCIA
+
+linguagens = ["python", "js", "c", "java", "c","csharp"]
 
 linguagens.remove("c")
 

@@ -1,7 +1,9 @@
+###>>>> MODULO DE CLASS ABSTRACT <<<####
 from abc import ABC, abstractmethod, abstractproperty
 
 
 class ControleRemoto(ABC):
+    pilhas = 2
     @abstractmethod
     def ligar(self):
         pass
@@ -12,45 +14,55 @@ class ControleRemoto(ABC):
 
     @property
     @abstractproperty
-    def marca(self):
+    def tipo_pilha(self):
         pass
 
 
 class ControleTV(ControleRemoto):
+    
     def ligar(self):
+        
         print("Ligando a TV...")
         print("Ligada!")
+        
 
     def desligar(self):
         print("Desligando a TV...")
         print("Desligada!")
 
     @property
-    def marca(self):
-        return "Philco"
+    def tipo_pilha(self):
+        return "AAA"
 
 
 class ControleArCondicionado(ControleRemoto):
+    
+     
     def ligar(self):
         print("Ligando o Ar Condicionado...")
         print("Ligado!")
+        
 
     def desligar(self):
         print("Desligando o Ar Condicionado...")
         print("Desligado!")
 
     @property
-    def marca(self):
-        return "LG"
+    def tipo_pilha(self):
+        return "AAA"
 
+def mostrar_dados(*objs):
+    for obj in objs:
+        print(obj)
 
 controle = ControleTV()
 controle.ligar()
-controle.desligar()
-print(controle.marca)
+controle.desligar() 
+mostrar_dados(controle.tipo_pilha   )
 
 
 controle = ControleArCondicionado()
 controle.ligar()
 controle.desligar()
-print(controle.marca)
+
+print(controle)

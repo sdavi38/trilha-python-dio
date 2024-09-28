@@ -1,12 +1,18 @@
 class Estudante:
+    ### VARIAVEIS DA CLASS
     escola = "DIO"
-
-    def __init__(self, nome, matricula):
+    estado = "PE"
+    
+        ### CONSTRUTOR ##
+    def __init__(self, nome, matricula, curso):
+        ## VARIAVEIS DE INSTANCIA
         self.nome = nome
+        self.curso = curso
         self.matricula = matricula
 
+        ### FORMATANDO A SAIDA
     def __str__(self) -> str:
-        return f"{self.nome} - {self.matricula} - {self.escola}"
+        return f"{self.nome} - {self.matricula} - {self.curso} - {self.escola}-{self.estado}"
 
 
 def mostrar_valores(*objs):
@@ -14,10 +20,10 @@ def mostrar_valores(*objs):
         print(obj)
 
 
-aluno_1 = Estudante("Guilherme", 1)
-aluno_2 = Estudante("Giovanna", 2)
-mostrar_valores(aluno_1, aluno_2)
+aluno_1 = Estudante("Guilherme", 1, "Python")
+aluno_2 = Estudante("Giovanna", 2,"Analise de Dados")
 
-Estudante.escola = "Python"
-aluno_3 = Estudante("Chappie", 3)
+Estudante.estado = "SP"
+aluno_3 = Estudante("Chappie", 3, "Desenvolvimento de Sistemas")
 mostrar_valores(aluno_1, aluno_2, aluno_3)
+ 

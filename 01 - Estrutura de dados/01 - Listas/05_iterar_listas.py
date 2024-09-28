@@ -1,4 +1,6 @@
-carros = ["gol", "celta", "palio"]
+##Pecorrendo uma Lista###
+
+carros = [1, 5,6]
 
 for carro in carros:
     print(carro)

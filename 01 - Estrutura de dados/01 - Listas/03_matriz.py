@@ -1,5 +1,7 @@
+##Lista Aninhada##
+
 matriz = [
-    [1, "a", 2],
+    [1, "a", 2], ## TRES LINHAS E TRES COLUNAS
     ["b", 3, 4],
     [6, 5, "c"]
 ]

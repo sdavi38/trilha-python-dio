@@ -1,3 +1,5 @@
+## Metodo append ==> adiciona um novo elemento na lista ##
+
 lista = []
 
 lista.append(1)

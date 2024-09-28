@@ -1,3 +1,5 @@
+### ORDENAR UMA LISTA
+
 linguagens = ["python", "js", "c", "java", "csharp"]
 linguagens.sort()  # ["c", "csharp", "java", "js", "python"]
 print(linguagens)

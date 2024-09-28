@@ -1,6 +1,12 @@
+## Pop conceito de pilhas REMOÇÃO DE ITENS
+## do ultimo que entrou para o primeiro ou escolhendo a 
+## posição de remoção
+
 linguagens = ["python", "js", "c", "java", "csharp"]
 
 print(linguagens.pop())  # csharp
 print(linguagens.pop())  # java
 print(linguagens.pop())  # c
 print(linguagens.pop(0))  # python
+
+print(linguagens)
